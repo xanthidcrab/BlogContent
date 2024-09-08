@@ -1,0 +1,25 @@
+﻿<Window x:Class="CNCUI.View.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CNCUI.View"
+        xmlns:header="clr-namespace:CNCUI.View" 
+        xmlns:header2="clr-namespace:CNCUI.View.Header" 
+        mc:Ignorable="d"
+        Title="Main" Height="1080" Width="1920"
+        Background="DarkBlue">
+    <Grid>
+        <StackPanel>
+            
+        <StackPanel Orientation="Horizontal" x:Name="Header" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <header:Logo  Margin="45 45 0 0"/>
+        <header:DateAndTime Margin="30 45 0 0" />
+        <header:MachineMode Margin="30 45 0 0" />
+        <header:User Margin="30 45 0 0"/>
+        </StackPanel>
+
+        <header2:Navigation HorizontalAlignment="Center" Margin="0 20 0 0" Width="1829"/>
+        </StackPanel>
+    </Grid>
+</Window>

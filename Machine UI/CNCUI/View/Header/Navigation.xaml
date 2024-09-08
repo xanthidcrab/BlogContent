@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="CNCUI.View.Header.Navigation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CNCUI.View.Header"
+             xmlns:vm="clr-namespace:CNCUI.ViewModel.Header"
+             mc:Ignorable="d" 
+             Height="110" d:DesignWidth="1830">
+    <UserControl.DataContext>
+        <vm:NavigationViewModel/>
+    </UserControl.DataContext>
+    <Border BorderThickness="3" BorderBrush="Black" CornerRadius="15">
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button Height="80" Width="316" Margin="50 0 50 0" Content="Ana Sayfa"/>
+            <Button Height="80" Width="316" Margin="0 0 50 0" Content="Manuel"/>
+            <Button Height="80" Width="316" Margin="0 0 50 0" Content="Auto"/>
+            <Button Height="80" Width="316" Margin="0 0 50 0" Content="Ayarlar"/>
+            <Button Height="80" Width="316" Margin="0 0 50 0" Content="I/O"/>
+        </StackPanel>
+    </Border>
+</UserControl>

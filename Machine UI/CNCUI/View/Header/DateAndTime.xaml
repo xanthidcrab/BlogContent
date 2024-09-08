@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="CNCUI.View.DateAndTime"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CNCUI.View"
+             xmlns:vm="clr-namespace:CNCUI.View.ViewModel.Header"
+             mc:Ignorable="d" 
+             Width="180" Height="110">
+    <UserControl.DataContext>
+        <vm:DateAndTimeViewModel/>
+    </UserControl.DataContext>
+    <Border BorderThickness="3" BorderBrush="Black" CornerRadius="15">
+        
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Width="auto" Height="auto">
+        <TextBlock Text="{Binding TextVar}"
+                   FontSize="32"
+                   FontWeight="Bold"/>
+    </Grid>
+    </Border>
+</UserControl>
